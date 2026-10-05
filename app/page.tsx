@@ -100,7 +100,7 @@ export default function Page() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
     <header className="site-header">
       <div className="container nav-inner">
-        <a href="#home" className="brand" onClick={closeMenu}><span className="brand-mark">ب</span><span>BM-Technologist<small>QURAN ACADEMY</small></span></a>
+        <a href="#home" className="brand" onClick={closeMenu}><span className="brand-mark"><img src="/WhatsApp_Image_2026-10-05_at_3.25.14_PM-removebg-preview.png" alt="BM-Technologist Quran Academy Logo" className="brand-logo" /></span><span>BM-Technologist<small>QURAN ACADEMY</small></span></a>
         <button className="menu-toggle" aria-label={menuOpen ? 'Close navigation' : 'Open navigation'} onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu />}</button>
         <nav className={menuOpen ? 'nav-links open' : 'nav-links'} aria-label="Main navigation">
           {['About', 'Courses', 'Teachers', 'Pricing', 'Testimonials', 'FAQ', 'Contact'].map(item => <a key={item} href={`#${item.toLowerCase()}`} onClick={closeMenu}>{item}</a>)}
